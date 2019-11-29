@@ -1,0 +1,21 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Product</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" [(ngModel)]="product.name" placeholder="Name" name="name" class="form-control" id="name">
+    </div>
+  
+    <div class="form-group">
+      <label for="stock">Stock:</label>
+      <input [(ngModel)]="product.stock" placeholder="Stock" name="stock" class="form-control" id="stock">
+    </div>
+  
+    <div class="form-group">
+      <label for="price">Last Name:</label>
+     <input [(ngModel)]="product.price" placeholder="Price" name="price" class="form-control" id="price">
+    </div>
+  
+    <button class="btn btn-success" (click)="createProduct()">Create</button>
+  </form>
+  </div>
